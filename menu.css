@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+.box
+{
+    background-image: linear-gradient(45deg,#d859ff, #0008ff, #52f9ff);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+*{
+    margin: 0;
+    overflow: hidden;
+}
+.zagolovok
+{
+    font-size: 100px;
+    font-weight: 1000;
+    color: #39fc03;
+    font-family: 'Russo One', sans-serif;
+    transform: translate(0px,400px);
+    /**transform: scale(1);*/
+
+}
+.knopka
+{
+
+}
+.click
+{
+    display: inline-block;
+    transform: translateY(500px);
+    transition: 0.5s;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    
+}
+.click:hover{
+    transform: scale(2) translateY(250px);
+    transition: 0.5s;
+    box-shadow: 0 0 10px white;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes name{
+    0%{
+        box-shadow: 0 0 10px white;
+    }
+    50%{
+        box-shadow: 0 0 5px white;
+    }
+    100%{
+        box-shadow: 0 0 10px white;
+    }
+}
+@keyframes animation {
+    0%{
+    transform: translateY(0);
+    }
+    50%{
+    transform: translateY(-50px);
+    }
+    100%{
+    transform: translateY(0);
+    }
+}
+.animation1
+{
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+.animation2
+{
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    animation-delay: 0.5s;
+}
+.animation3
+{
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
